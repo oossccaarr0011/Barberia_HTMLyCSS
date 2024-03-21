@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <div class="caja">
+                <!--La propiedad alt es para darle una referencia a la imagen-->
+                <h1><img src="imagenes/logo.png" alt="Logo de Barberia Alura"></h1>
+
+                <nav>
+                    <ul>
+                         <!--La etiqueta "a" nos ayuda a mandar al usuario a otra pagina, se referencia con "href"-->
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                 </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+            <!--Etiqueta utilizada para cuando vas a realizar formularios-->
+            <form>
+                <!--El label es para agregar un nombre antes del recuadro y el input es para que el usuario agregue informacion en un recuadro-->
+                <label for="nombre-apellido">Nombre y Apellido</label>
+                <!--El required es para indicarle a la pagina que un campo es obligatorio y no se puede saltar-->
+                <!--El placeholder es para colocar un mensaje guia de utilidad para el usuario-->
+                <input type="text" id="nombre-apellido" class="input-padron">
+
+                <label for="correo-electronico">Correo Electronico</label>
+                <input type="email" id="correo-electronico" class="input-padron" required required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required required placeholder="(XXX) XXX XXXX">
+
+                <!--Esta etiqueta es para crear un cuadro de input manipulable, para modificar sus dimensiones-->
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+                <fieldset>
+                    <legend>Como le gustaria que lo contactemos?</legend>
+
+                    <!--El input radio es el que permite ingresar datos de opcion multiple-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                   
+                    <!--La propiedad checked es para tener seleccionada esa opcion por default-->
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <!--Esta etiqueta funciona para darle al usuario una lista de opciones-->
+                    <legend>En cual horario prefiere ser atendido?</legend> 
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <!--El checkbox funciona como una casilla que puedes seleccionar-->
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+
+                <!--El input es para todo lo referente a ingresar informacion, el elemento sumit es para enviar la info-->
+                <input type="submit" class="enviar" value="Enviar Formulario">
+
+            </form>
+
+            <!--Creacion de una tabla con todos sus parametros, primero definir la tabla, despues colomnas y al final celdas-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de Barberia Alura">
+            <!--Para agregar caracteres especiales es necesario buscar el codigo de identidad y agregarlo como texto-->
+            <p class="Copyright">&copy Copyright Barberia Alura - 2024</p>
+        </footer>   

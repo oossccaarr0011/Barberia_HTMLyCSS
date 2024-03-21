@@ -1,0 +1,54 @@
+/*Version 3 de CSS*/
+
+.tituloPrincipal {
+    padding-left: 30px;
+}
+
+/*Se coloca el '#' para referenciar una etiqueta 'id'*/
+#banner{
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+
+.tituloCentralizado {
+    text-align: center;
+}
+
+/*Con esta indicacion hacemos que todas las etiquetas 'p' se asignen con este estilo*/
+p{
+    text-align: center;
+    
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.Diferenciales {
+    background-color: white;
+    padding: 30px;
+} 
+
+.items {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
